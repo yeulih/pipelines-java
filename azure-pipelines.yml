@@ -20,3 +20,15 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
+- task: FortifyOnDemandStatic@5
+  inputs:
+    FortifyProjects: '$(Build.BinariesDirectory)'
+    BSIToken: 'eyJ0ZW5hbnRJZCI6MTA5MiwidGVuYW50Q29kZSI6IjMwMzQxIiwicmVsZWFzZUlkIjoxNTg5NSwicGF5bG9hZFR5cGUiOiJBTkFMWVNJU19QQVlMT0FEIiwiYXNzZXNzbWVudFR5cGVJZCI6MTE5LCJ0ZWNobm9sb2d5VHlwZSI6IkpBVkEvSjJFRSIsInRlY2hub2xvZ3lUeXBlSWQiOjcsInRlY2hub2xvZ3lWZXJzaW9uIjoiMTEiLCJ0ZWNobm9sb2d5VmVyc2lvbklkIjoyMCwiYXVkaXRQcmVmZXJlbmNlIjoiTWFudWFsIiwiYXVkaXRQcmVmZXJlbmNlSWQiOjEsImluY2x1ZGVUaGlyZFBhcnR5IjpmYWxzZSwiaW5jbHVkZU9wZW5Tb3VyY2VBbmFseXNpcyI6ZmFsc2UsInBvcnRhbFVyaSI6Imh0dHBzOi8vZm9kcWE5LXRlbmFudC5mb3J0aWZ5Zm9kcWE5LmxvY2FsIiwiYXBpVXJpIjoiaHR0cDovLzE2LjEwMy4yMzQuMjM3Iiwic2NhblByZWZlcmVuY2UiOiJTdGFuZGFyZCIsInNjYW5QcmVmZXJlbmNlSWQiOjF9'
+    APIAuthenticationType: '1'
+    APIKey: '1dfc82fb-cf1c-4b28-b7cc-33767be02cd1'
+    APISecret: 'A6wy7Esq7~KGqtDPxXmKg0Ps0(b[fi'
+    EntitlementPreference: '1'
+    PurchaseEntitlements: 'false'
+    InProgressScanActionType: '0'
+    RemediationScanPreference: '2'
+    PolicyFailAction: '0'
